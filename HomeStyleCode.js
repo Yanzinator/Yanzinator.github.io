@@ -57,3 +57,37 @@ window.onload = e => {
   1500
   )
 }
+
+let navBarClicked = false;
+let midNavAnim = false;
+
+function navBarClick() {
+  if (midNavAnim) {return;}
+  midNavAnim = true;
+  setTimeout(() => {
+    midNavAnim = false;
+  }, 1000);
+  if (!navBarClicked){
+    navBarClicked = true;
+    document.getElementById("Nav1").style.opacity = "1";
+    document.getElementById("Nav1").style.transform = "translateY(-300%)";
+    document.getElementById("Nav2").style.opacity = "1";
+    document.getElementById("Nav2").style.transform = "translateY(-600%)";
+    document.getElementById("Nav3").style.opacity = "1";
+    document.getElementById("Nav3").style.transform = "translateY(-900%)";
+    return;
+  }
+  
+  if (navBarClicked) {
+    navBarClicked = false;
+    document.getElementById("Nav1").style.transform = "translateY(0%)";
+    document.getElementById("Nav2").style.transform = "translateY(0%)";
+    document.getElementById("Nav3").style.transform = "translateY(0%)";
+    setTimeout(() => {
+      document.getElementById("Nav1").style.opacity = "0";
+      document.getElementById("Nav2").style.opacity = "0";
+      document.getElementById("Nav3").style.opacity = "0";      
+    }, 1000);
+    return;
+  }
+}
