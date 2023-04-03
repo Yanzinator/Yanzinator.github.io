@@ -1,0 +1,131 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+.Main {
+    background-image: linear-gradient(
+        #00006b 0vh,
+        #00006b 100vh,
+        darkgreen 100vh,
+        darkgreen 180vh,
+        green 180vh,
+        green 260vh,
+        lightgreen 260vh,
+        lightgreen 340vh,
+        lime 340vh,
+        lime 420vh
+    );
+    z-index: 0;
+}
+.navBar {
+    position: fixed;
+    width: 100%;
+    display : flex;
+    flex-direction: row;
+    height: 5%;
+    z-index: 100;
+}
+.navButton {
+    padding: 5px;
+    display : inline-block;
+    background-color: #00004a;
+    color: lime;
+    border: 3px solid darkblue;
+    text-align: left;
+    font : italic bold larger times-new-roman;
+    box-sizing: border-box;
+}
+.navButton:hover {
+    background-color: #010191;
+}
+#Nav1 {
+    width: 50%;
+}
+#Nav2 {
+    width: 20%;
+}
+#nav3 {
+    width: 30%;
+}
+.Title{
+    display: flex;
+    margin : 0px;
+    color : lime;
+    height : 100svb;
+    width : 100%;
+    align-items: center;
+    justify-content: center;
+    z-index:0;
+}   
+#Title  {
+    position: relative; 
+    z-index: 3;
+}
+.part {
+    height : 80vh;
+    width: 100%;
+    z-index: 0;
+    z-index: 2;
+    position: relative;
+}
+.part.first{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.container.first{
+    transform: translateX(10%);
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card.first {
+    width : 20vw;
+    aspect-ratio: 7/11;
+    background-color: darkblue;
+    transform: translateX(40vw) rotate(20deg); 
+    border: blue solid 4%;
+    border-radius: 4%;
+    text-align: center;
+    transition : 1s;
+}
+.card.first:hover {
+    transform: translateX(40vw) rotate(-10deg);
+    width : 23vw;
+}
+.cursorEffect{
+    width : 15vw;
+    filter: blur(20vw);
+    aspect-ratio: 1/1;
+    position : fixed;   
+    background-image: conic-gradient(lime, blue, blue,lime);
+    border-radius: 100%;
+    z-index: 1;
+}
+#open {
+    background-color: #060661;
+    width : 101vw;
+    height : 101vh;
+    position: fixed;
+    z-index: 101;
+    transition: 1s  cubic-bezier(.45,.21,.49,.8) transform;
+}
+#openlogo {
+    width: 10vw;
+    aspect-ratio: 1/1;
+    background: url('letter-y10.png') no-repeat center;
+    background-size: contain;
+    filter: hue-rotate(-120deg);
+    position: fixed;
+    transform: translate(40vw, 40vh);
+}
+#openLogoCover {
+    width: 15vw;
+    aspect-ratio: 1/1;
+    position: fixed;
+    z-index: 1;
+    background-color: #060661;
+    transform: translate(50vw, 40vh);
+}
