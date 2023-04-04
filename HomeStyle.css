@@ -147,3 +147,37 @@ body {
     background-color: #060661;
     transform: translate(50vw, 40vh);
 }
+
+@media only screen and (max-width: 1000px) {
+    #navBarContainer {
+        left: 30vw;
+        top: 75vh;
+        width: 40vw;
+        height: 40vw;
+    }
+    #navBar:hover, #navBar:active {
+        width: 45vw;
+        height: 45vw;
+    }
+    .navButton {
+        font-size: xx-large;
+    }
+    .part.first{
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+    }
+    .card.first{
+        transform: translate(0,70%) rotate(20deg);
+        height: 35vh;
+        aspect-ratio: 7/11;
+        width: auto;
+    }
+    .card.first:hover, .card.first:active {
+        transform: translate(0,70%) rotate(-10deg);
+        height : 40vh;
+        width: auto;
+    }
+
+
+}
