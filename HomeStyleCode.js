@@ -61,6 +61,7 @@ window.onload = e => {
 let navBarClicked = false;
 let midNavAnim = false;
 
+
 function navBarClick() {
   if (midNavAnim) {return;}
   midNavAnim = true;
@@ -69,12 +70,15 @@ function navBarClick() {
   }, 1000);
   if (!navBarClicked){
     navBarClicked = true;
-    document.getElementById("Nav1").style.opacity = "1";
-    document.getElementById("Nav1").style.transform = "translateY(-300%)";
-    document.getElementById("Nav2").style.opacity = "1";
-    document.getElementById("Nav2").style.transform = "translateY(-600%)";
-    document.getElementById("Nav3").style.opacity = "1";
-    document.getElementById("Nav3").style.transform = "translateY(-900%)";
+    document.getElementById("Nav1").style.visibility = "visible";
+    document.getElementById("Nav1").style.width = "10vw";
+    document.getElementById("Nav1").style.transform = "translate(-25%,-10vh)";
+    document.getElementById("Nav2").style.visibility = "visible";
+    document.getElementById("Nav2").style.width = "10vw";
+    document.getElementById("Nav2").style.transform = "translate(-25%,-20vh)";
+    document.getElementById("Nav3").style.visibility = "visible";
+    document.getElementById("Nav3").style.width = "10vw";
+    document.getElementById("Nav3").style.transform = "translate(-25%,-30vh)";
     return;
   }
   
@@ -83,11 +87,12 @@ function navBarClick() {
     document.getElementById("Nav1").style.transform = "translateY(0%)";
     document.getElementById("Nav2").style.transform = "translateY(0%)";
     document.getElementById("Nav3").style.transform = "translateY(0%)";
-    setTimeout(() => {
-      document.getElementById("Nav1").style.opacity = "0";
-      document.getElementById("Nav2").style.opacity = "0";
-      document.getElementById("Nav3").style.opacity = "0";      
-    }, 1000);
+    document.getElementById("Nav1").style.width = "5vw";
+    document.getElementById("Nav2").style.width = "5vw";
+    document.getElementById("Nav3").style.width = "5vw";
+    document.getElementById("Nav1").style.visibility = "hidden";
+    document.getElementById("Nav2").style.visibility = "hidden";
+    document.getElementById("Nav3").style.visibility = "hidden";      
     return;
   }
 }
