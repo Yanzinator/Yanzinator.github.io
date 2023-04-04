@@ -71,14 +71,14 @@ function navBarClick() {
   if (!navBarClicked){
     navBarClicked = true;
     document.getElementById("Nav1").style.visibility = "visible";
-    document.getElementById("Nav1").style.width = "10vw";
-    document.getElementById("Nav1").style.transform = "translate(-25%,-10vh)";
+    document.getElementById("Nav1").style.width = "200%";
+    document.getElementById("Nav1").style.transform = "translate(-25%,-200%)";
     document.getElementById("Nav2").style.visibility = "visible";
-    document.getElementById("Nav2").style.width = "10vw";
-    document.getElementById("Nav2").style.transform = "translate(-25%,-20vh)";
+    document.getElementById("Nav2").style.width = "200%";
+    document.getElementById("Nav2").style.transform = "translate(-25%,-400%)";
     document.getElementById("Nav3").style.visibility = "visible";
-    document.getElementById("Nav3").style.width = "10vw";
-    document.getElementById("Nav3").style.transform = "translate(-25%,-30vh)";
+    document.getElementById("Nav3").style.width = "200%";
+    document.getElementById("Nav3").style.transform = "translate(-25%,-600%)";
     return;
   }
   
@@ -87,12 +87,15 @@ function navBarClick() {
     document.getElementById("Nav1").style.transform = "translateY(0%)";
     document.getElementById("Nav2").style.transform = "translateY(0%)";
     document.getElementById("Nav3").style.transform = "translateY(0%)";
-    document.getElementById("Nav1").style.width = "5vw";
-    document.getElementById("Nav2").style.width = "5vw";
-    document.getElementById("Nav3").style.width = "5vw";
-    document.getElementById("Nav1").style.visibility = "hidden";
-    document.getElementById("Nav2").style.visibility = "hidden";
-    document.getElementById("Nav3").style.visibility = "hidden";      
+    document.getElementById("Nav1").style.width = "100%";
+    document.getElementById("Nav2").style.width = "100%";
+    document.getElementById("Nav3").style.width = "100%";
+    setTimeout(function () {
+      document.getElementById("Nav1").style.visibility = "hidden";
+      document.getElementById("Nav2").style.visibility = "hidden";
+      document.getElementById("Nav3").style.visibility = "hidden";      
+
+    }, 1000)
     return;
   }
 }
