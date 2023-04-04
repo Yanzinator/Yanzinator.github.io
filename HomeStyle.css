@@ -4,16 +4,16 @@ body {
 }
 .Main {
     background-image: linear-gradient(
-        #00006b 0vh,
-        #00006b 100vh,
-        darkgreen 100vh,
-        darkgreen 180vh,
-        green 180vh,
-        green 260vh,
-        lightgreen 260vh,
-        lightgreen 340vh,
-        lime 340vh,
-        lime 420vh
+        #00006b 0vmin,
+        #00006b 100vmin,
+        darkgreen 100vmin,
+        darkgreen 180vmin,
+        green 180vmin,
+        green 260vmin,
+        lightgreen 260vmin,
+        lightgreen 340vmin,
+        lime 340vmin,
+        lime 420vmin
     );
     z-index: 0;
 }
