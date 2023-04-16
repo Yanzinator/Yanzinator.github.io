@@ -7,7 +7,7 @@ body {
         #00006b 0svh,
         #00006b 100svh,
         darkgreen 100svh,
-        darkgreen 180svh,
+        darkgreen 180svh, 
         green 180svh,
         green 260svh,
         lightgreen 260svh,
@@ -151,7 +151,8 @@ body {
 @media only screen and (max-width: 1000px) {
     #navBarContainer {
         left: 30vw;
-        top: 75vh;
+        bottom: -20vw;
+        top: auto;
         width: 40vw;
         height: 40vw;
     }
