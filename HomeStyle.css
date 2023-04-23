@@ -3,18 +3,7 @@ body {
     margin: 0px;
 }
 .Main {
-    background-image: linear-gradient(
-        #00006b 0svh,
-        #00006b 100svh,
-        darkgreen 100svh,
-        darkgreen 180svh, 
-        green 180svh,
-        green 260svh,
-        lightgreen 260svh,
-        lightgreen 340svh,
-        lime 340svh,
-        lime 420svh
-    );
+    background-color: black;
     z-index: 0;
 }
 #navBarContainer {
@@ -81,6 +70,7 @@ body {
 .part {
     height : 80vh;
     width: 100%;
+    border-top: solid white 3px;
     z-index: 0;
     z-index: 2;
     position: relative;
@@ -93,7 +83,7 @@ body {
 .container.first{
     transform: translateX(10%);
     display: flex;
-    color: black;
+    color: white;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -101,17 +91,31 @@ body {
 .card.first {
     position : absolute;
     width : 20vw;
+    background-image: linear-gradient(
+        rgba(0, 255, 0, 0.4) 0px,
+        rgba(0, 255, 0, 0.4) 3px,
+        black 4px,
+        black 9px
+    );
+    animation: cardBack 22s infinite linear;
+    background-size: 100% 10px;
     aspect-ratio: 7/11;
-    background-color: darkblue;
     transform: translateX(70vw) rotate(20deg); 
-    border: blue solid 4%;
+    border: solid lime 1px;
     border-radius: 4%;
     text-align: center;
     transition : 1s;
 }
+.cardText {
+    color: lime;
+}
 .card.first:hover {
     transform: translateX(70vw) rotate(-10deg);
     width : 23vw;
+}
+@keyframes cardBack {
+    from {background-position-y: 0%;}
+    to {background-position-y: -100%;}
 }
 .cursorEffect{
     width : 15vw;
@@ -121,6 +125,12 @@ body {
     background-image: conic-gradient(lime, blue, blue,lime);
     border-radius: 100%;
     z-index: 1;
+    translate: -50% -50%;
+    animation: cursorEffectRotation 15s infinite;
+}
+@keyframes cursorEffectRotation {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
 }
 #open {
     background-color: #060661;

@@ -38,10 +38,12 @@ function textHypi2() {
   document.getElementById("Title").innerHTML = text;
 }
 
-window.onmousemove = e => {
-    const x = e.clientX - document.getElementById("cursorEffect").offsetWidth/2,
-          y = e.clientY - document.getElementById("cursorEffect").offsetHeight/2;
-    document.getElementById("cursorEffect").style.transform = `translate(${x}px, ${y}px)`;
+document.body.onpointermove = event => {
+    const { clientX, clientY } = event;
+    document.getElementById("cursorEffect").animate ({
+      left:  `${clientX}px`,
+      top: `${clientY}px`
+    }, {duration: 2000, fill: "forwards"});
 }
 
 window.onload = e => {
