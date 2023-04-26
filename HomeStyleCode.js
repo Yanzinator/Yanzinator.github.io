@@ -101,3 +101,7 @@ function navBarClick() {
     return;
   }
 }
+
+function sendCube() {
+  location = "https://yanzinator.github.io/Cubing/bldWordSaver.html";
+}

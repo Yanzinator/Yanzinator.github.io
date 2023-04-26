@@ -158,6 +158,45 @@ body {
     transform: translate(50vw, 40vh);
 }
 
+.Part.second {
+    display: flex;
+    align-items: center ;
+}
+
+#Cube{
+    position: relative;
+    display: grid;
+    margin-left: 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.Cube {
+    border: solid black 2px;
+}
+
+#cubeText{
+    position: absolute;
+    top: 120px;
+    left: 90px;
+    color: white;
+}
+.Box1{
+    background-color: lime
+}
+.Box2{
+    background-color: blue
+}
+.Box3{
+    background-color: red
+}
+.Box4{
+    background-color: orange
+}
+.Box5{
+    background-color: yellow
+}
+
 @media only screen and (max-width: 1000px) {
     #navBarContainer {
         left: 30vw;
