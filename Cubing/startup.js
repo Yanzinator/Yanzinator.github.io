@@ -1,5 +1,5 @@
-let letterbox1 = document.getElementById("1");
-let letterbox2 = document.getElementById("2");
+let letterbox1 = document.getElementById("box1");
+let letterbox2 = document.getElementById("box2");
 
 for (let i = 1; i <= 24; i++) {
     let index = letterbox1.querySelector('.unletter');
@@ -30,7 +30,7 @@ function Choose1(clicked) {
         }
     }
     chosen1 = clicked;
-    button.style.backgroundColor = 'lightblue';
+    button.style.backgroundColor = 'black';
 
     update()
 }
@@ -46,7 +46,7 @@ function Choose2(clicked) {
         }
     }
     chosen2 = clicked;
-    button.style.backgroundColor = 'lightblue';
+    button.style.backgroundColor = 'black';
     update()
 }
 
