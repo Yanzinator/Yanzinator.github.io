@@ -14,10 +14,10 @@ body {
     left: 5%;
 }
 .letterBox#box1{
-    grid-column: 2;
+    grid-column: 1;
 }
 .letterBox#box2{
-    grid-column: 1;
+    grid-column: 2;
 }
 .letter{
     border-radius: 0;
