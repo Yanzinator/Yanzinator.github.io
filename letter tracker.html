@@ -1,0 +1,72 @@
+<body>
+    <div class = "holder">
+        <div class = "letter" style="color: grey;" onclick="toggle(1)" id="l1">a</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(2)" id="l2">b</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(3)" id="l3">c</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(4)" id="l4">d</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(5)" id="l5">e</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(6)" id="l6">f</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(7)" id="l7">g</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(8)" id="l8">h</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(9)" id="l9">i</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(10)" id="l10">j</div>
+
+        <div class = "letter" style="color: grey;" onclick="toggle(11)" id="l11">k</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(12)" id="l12">l</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(13)" id="l13">m</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(14)" id="l14">n</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(15)" id="l15">o</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(16)" id="l16">p</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(17)" id="l17">q</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(18)" id="l18">r</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(19)" id="l19">s</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(20)" id="l20">t</div>
+
+        <div class = "letter" style="color: grey;" onclick="toggle(21)" id="l21">u</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(22)" id="l22">v</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(23)" id="l23">w</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(24)" id="l24">x</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(25)" id="l25">y</div>
+        <div class = "letter" style="color: grey;" onclick="toggle(26)" id="l26">z</div>
+
+    </div>
+</body>
+
+
+<script>
+    function toggle(lnum){
+        let id = "l" + lnum
+        let chosenDiv = document.getElementById(id)
+        if (chosenDiv.style.color == "grey") {
+            chosenDiv.style.color = "white"
+        }
+        else if (chosenDiv.style.color == "white") {
+            chosenDiv.style.color = "grey"
+        }
+        else {
+            console.log("unkown state of buttons")
+        }
+    }
+
+</script>
+
+<style>
+    body {
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        height: 500;
+    }
+    .holder {
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px 50px;
+    }
+    .letter {
+        font-size: xx-large;
+        background-color: darkslategray;
+        margin: 5px;
+        border: 1px darkblue solid;
+    }
+
+</style>

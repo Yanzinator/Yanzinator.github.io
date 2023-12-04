@@ -179,7 +179,7 @@ body {
     position: absolute;
     top: 120px;
     left: 90px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .Box1{
     background-color: lime
@@ -195,6 +195,23 @@ body {
 }
 .Box5{
     background-color: yellow
+}
+.Part.third{
+    display: flex;
+    
+}
+.letterTracker{
+    color: rgb(0, 82, 0);
+    background-color: #000050;
+    border: 2px darkblue solid;
+    position: absolute;
+    right: 30px;
+    top: 200px;
+    height: 200px;
+    width: 300px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 200px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -228,6 +245,8 @@ body {
         height : 40vh;
         width: auto;
     }
+
+
 
 
 }

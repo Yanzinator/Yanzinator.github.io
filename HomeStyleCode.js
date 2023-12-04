@@ -105,3 +105,6 @@ function navBarClick() {
 function sendCube() {
   location = "https://yanzinator.github.io/Cubing/bldWordSaver.html";
 }
+function sendLetter() {
+  location = "https://yanzinator.github.io/letterTracker.html"
+}
