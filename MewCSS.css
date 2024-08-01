@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mewAct {
+    margin: 30px;
+    width: 100px;
+    height: 60px;
+    font-size: larger;
+    background-color: black;
+    color: aliceblue;
+}
+#ArtificialMew {
+    height: 60px;
+    font-size: larger;
+    color: aliceblue;
+}
